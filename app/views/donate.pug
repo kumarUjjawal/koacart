@@ -1,0 +1,13 @@
+label(for="amount") Please enter your donation amount below
+input#amount.(type="number", value=model.amount)
+button#donate.snipcart-add-item(
+data-item-id="donation"
+data-item-url=${urlWithoutQuery}?amount=${model.amount}
+data-item-name="Donation"
+data-item-description="Can't thank you enough!"
+data-item-price=model.amount
+data-item-shippable="false"
+data-item-categories="donations"
+data-item-max-quantity="1"
+data-item-taxable=false
+) Add to cart
